@@ -30,3 +30,13 @@ indicadores.forEach((dot, i) => {
 setInterval(() => { idx++; showImg(); }, 7000);
 
 showImg();
+
+contacto.addEventListener('click', () => {
+  setTimeout(() => {
+  
+   foot.style.border = 'none';  
+   foot.style.animation = 'none';  
+  }, 2000);
+   foot.style.border = '2px solid rgb(252, 225, 17)';  
+   foot.style.animation = 'parpadeo 1s infinite';  
+});

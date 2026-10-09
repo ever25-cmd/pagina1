@@ -236,3 +236,10 @@ header{
   color: white;
   border: none;
 }
+
+
+@keyframes parpadeo {
+  0% { border: 2px solid rgb(252, 225, 17); }
+  50% { border: 2px solid rgba(252, 225, 17, 0.5); }
+  100% { border: 2px solid rgb(252, 225, 17); }
+}
