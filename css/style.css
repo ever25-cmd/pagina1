@@ -120,23 +120,54 @@ body{
 }
 
 .producto{
-  width: 400px;
-  height: auto;
+  width: 200px;
+  height: 400px;
   display: block;
   gap: 20px;
   margin-top: 20px;
+  margin-bottom: 10px;
   border: 1px solid black;
   text-align: center;
-  background-color: #FFFFFF ;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.producto p ,h3{
+  color: white;
 }
 
 .img{
-  object-fit: cover; 
-  width: 400px;
+  object-fit: contain; 
+  width: 100%;
   height: 200px;
-  height: auto;
 }
-
+.carrito{
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  border-radius: 50%; 
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  background-image: url('../assets/img/carrito.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#count{
+  color: #2b2c4f;
+  text-align: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+.contador{
+  position: absolute;
+  background-color: #fff;
+  width: 30px;
+  height: 25px;
+  border-radius: 50%;
+  bottom: 0px;
+}
 .Productos{
   display: flex;
   flex-wrap: wrap;
@@ -144,6 +175,7 @@ body{
   align-items: center;
   justify-content: center;
   border: 3px solid orange;
+  margin-top: 40px;
 }
 
 #pro1{
@@ -243,3 +275,23 @@ header{
   50% { border: 2px solid rgba(252, 225, 17, 0.5); }
   100% { border: 2px solid rgb(252, 225, 17); }
 }
+
+.BTNcomprar:hover{
+  background-color: rgb(221, 107, 0);
+  color: black;
+  box-shadow: 0 0 10px rgba(221, 107, 0, 0.5);
+}
+
+#productosCarrito{
+  background-color: orange;
+  height: auto;
+  width: 400px;
+  margin: 30px auto;
+}
+
+#BotonesCom{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
